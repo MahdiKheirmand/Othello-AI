@@ -77,7 +77,7 @@ void eligible ( int board[][8] , int a[][8] , int c , int ce ,int i , int j , in
     int check = 0;              // not founded //
     for( d = -1  ; check == 0 && d <= 1 ; d++ ){
         for( e = -1 ; check == 0 && e <= 1 ; e++ ){
-            if( d != 0  ||  e != 0 ){
+            if( d != 0  ||  e != 0 ){               // if d == 0 & e == 0 => it checks the same house continously//     
                 if ( j + d >= 0  &&  j + d < 8  &&  i + e < 8  &&  i + e >= 0  &&  board[i+e][j+d] == ce ){
                     ai = i + e;
                     aj = j + d;
@@ -86,10 +86,10 @@ void eligible ( int board[][8] , int a[][8] , int c , int ce ,int i , int j , in
                         aj = aj + d;
                     }
                     if(board[ai][aj]==c){
-                        a[i][j]=0;                  // a[i][j] = 0 => board[i][j] is eligible//
+                        a[i][j]=0;                   // a[i][j] = 0 => board[i][j] is eligible//
                         *x = i;                      // initial value //
                         *y = j;                      // initial value //
-                        check=1;                    // founded //
+                        check = 1;                     // founded //
                     }
                 }
             }
