@@ -2,7 +2,7 @@
 <br/>AI for Othello;
 <br/>
 <br/> You can see the project from beggining to the end <a href=https://github.com/erfanesfahanian1378/Othello-project >click here</a>;
-<hr color=navy width=300 align=“center”>
+<hr color=navy width=700 align=“center”>
 every place got a point & based on the board given, chooses the best place;
 <br/>the board is given as:    Name-of-File.exe 00000000 00000000 00000000 00012000 00021000 00000000 00000000 00000000 (AI's colour);
 <br/>0 : empty house   ;   1 : black   ;   2 : white 
